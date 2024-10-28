@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistor Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="transistor.png">
+</head>
+<body>
+    <header>Transistor Calculadora</header>
+    <section>
+        <div>
+            <p>
+                Vcc: <input type="number" id="vcc" >  V
+            </p>
+            <p>
+                Vin: <input type="number" id="vin" > mV
+            </p>
+            <p>
+                rs: <input type="number" id="rs"> K&Omega;
+            </p>
+            <p>
+                R1: <input type="number" id="r1"> K&Omega;
+            </p>
+            <p>
+                R2: <input type="number" id="r2"> K&Omega;
+            </p>
+            <p>
+                RC: <input type="number" id="rc"> K&Omega;
+            </p>
+            <p>
+                RE: <input type="number" id="re"> K&Omega;
+            </p>
+            <p>
+                rE: <input type="number" id="re0"> &Omega;
+            </p>
+            <p>
+                RL: <input type="number" id="rl"> K&Omega;
+            </p>
+            <p>
+                Bcc: <input type="number" id="bcc">
+            </p>
+            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <footer><p>&copy;<strong> Gabriel da Luz</strong></p></footer>
+    <script src="calculos.js"></script>
+    <script src="Modules/emissor_comum.js"></script>
+    <script src="Modules/coletor_comum.js"></script>
+    <script src="Modules/base_comum.js"></script>
+</body>
+</html>
